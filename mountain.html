@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mountains</title> 
+  <link rel="stylesheet" href="./mountain.css"> 
+  <link rel="shortcut icon" type="x-icon" href="icon.png">  
+ 
+</head> 
+ 
+   
+<!-- partial:index.partial.html -->
+<body>
+
+<!--loader-->
+
+<div class="loading">
+  <div class="loading-text">
+      <span class="loading-text-words">L</span>
+      <span class="loading-text-words">O</span>
+      <span class="loading-text-words">A</span>
+      <span class="loading-text-words">D</span>
+      <span class="loading-text-words">I</span>
+      <span class="loading-text-words">N</span>
+      <span class="loading-text-words">G</span>
+  </div>
+</div>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+  <section class="hero-section">
+    <div class="card-grid">
+      <a class="card" href="fuji.html">
+        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)"></div>
+        <div class="card__content">
+          <p class="card__category">Mountains</p>
+          <h3 class="card__heading">Mount Fuji</h3>  
+        </div>
+      </a>
+      <a class="card" href="kilimanjaro.html">
+        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1518729571365-9a891a9df2bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnQlMjBraWxpbWFuamFyb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60)"></div>
+        <div class="card__content">
+          <p class="card__category">Mountains</p>
+          <h3 class="card__heading">Mount Kilimanjaro</h3> 
+        </div>
+      </a>
+      <a class="card" href="everest.html">
+        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80)"></div>
+        <div class="card__content">
+          <p class="card__category">Mountains</p>
+          <h3 class="card__heading">Mount Everest</h3>  
+        </div>
+      </li>
+      <a class="card" href="rainer.html">
+        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1526741004090-a3c080bb4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fG1vdW50JTIwcmFpbmVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60)"></div>
+        <div class="card__content">
+          <p class="card__category">Mountains</p>
+          <h3 class="card__heading">Mount Rainer</h3> 
+        </div>
+      </a>
+    <div>
+  </section> 
+
+  <div class="goback-button">
+    <button onclick="window.location.href='index.html'" class="custom-btn btn-5" id="goback-button"><span>Return</span></button> 
+  </div>
+  
+  
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%; 
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.loading-text span {
+  font-size: 2.5em;  
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: 'Quattrocento Sans', sans-serif;
+  filter: blur(0px);
+  animation: blur-text 1.5s infinite linear alternate;
+}
+
+@keyframes blur-text {
+  0% {
+      filter: blur(0px);
+  }
+  100% {
+      filter: blur(4px);
+  }
+}
+ 
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  setTimeout(function() {
+    var loaderWrapper = document.querySelector(".loading");  
+    loaderWrapper.style.display = "none";
+  }, 4000); 
+});
+
+ 
+</script> 
+
+</body>
+
+
+
+<!-- partial -->
+  <script  src="./mountain.js"></script> 
+
+
+</html>

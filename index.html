@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="x-icon" href="icon.png">  
+  <title>Travel</title>    
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-pUA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /> 
+  
+
+
+
+</head> 
+ 
+<audio autoplay loop volume="1.0" id="bgmusic">  
+  <source src="backgroundmusicmain.mp3" type="audio/mpeg">  
+  Your browser does not support the audio element.
+</audio> 
+  
+<body> 
+<!--loader-->
+
+<div class="loading">
+  <div class="loading-text">
+      <span class="loading-text-words">L</span>
+      <span class="loading-text-words">O</span>
+      <span class="loading-text-words">A</span>
+      <span class="loading-text-words">D</span>
+      <span class="loading-text-words">I</span>
+      <span class="loading-text-words">N</span>
+      <span class="loading-text-words">G</span>
+  </div>
+</div> 
+
+<!--popup-->
+<div class="popup-container" id="popupContainer">
+  <div class="popup">
+      <p>We hope that your experience is smooth</p>
+      <button class="btn-yes" onclick="handleYes()">Yes</button>
+      <button class="btn-no" onclick="handleNo()">No</button>
+  </div>
+</div> 
+
+
+<!------------------------------------------------------------------------------------> 
+
+  <!-- //navbar  -->
+  <header class="hide">
+    <nav id="navbar">
+      <a href="#home"><img src="icon.png" alt="Travel" class="logo"></a> 
+ 
+      <div class="hamburger" id="hamburger-icon"> 
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i> 
+      </div> 
+      <div class="search-bar"> 
+        <input type="text" id="search-input" placeholder="Discover...">
+  
+        <i id="search-icon" class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+        <div id="search-suggestions"></div>
+ 
+      </div>
+      <ul > 
+        <li><a href="#home" id="home1">Home</a></li>
+  <li><a href="#explore" id="explore1">Explore</a></li> 
+  <li><a href="#yuva" id="about1">Club</a></li>   
+  <li><a href="#faq" id="faq1">FAQ's</a></li>   
+  <li><a href="#about" id="about1">About</a></li>      
+      </ul>
+    </nav>
+  </header>
+
+<!--top button-->
+<div>
+  <i id="top-icon" class="fas fa-arrow-up" style="color: #ffffff; font-size: 30px;"></i>
+     
+</div>
+
+<!--cursor-->
+
+<section id="home">
+<main > 
+  <div class="vigneete hide"></div>
+  <img src="img/background.png" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-distance="-200" class="parallax bg-img">
+
+  <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.32" data-speedz="0" data-distance="850" class="parallax fog-7">
+  
+  <img src="img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" data-speedz="0" data-distance="1100" class="parallax mountain-10">
+  
+  <img src="img/mountain_9.png" data-speedx="0.125" data-speedy="0.155" data-speedz="0.15" data-distance="1400" class="parallax mountain-9">
+  
+  <img src="img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" data-speedz="0" data-distance="1700" class="parallax mountain-8">
+  
+  <img src="img/fog_5.png" data-speedx="0.16"  data-speedy="0.105" data-speedz="0" data-distance="1800" class="parallax fog-5">
+  
+  <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-distance="2000" class="parallax mountain-7">
+  <div class="text parallax" data-speedx="0.07"  data-speedy="0.07 " data-speedz="0" data-distance="0">
+   <h2>Yuva</h2> 
+    <h1>tourism</h1>  
+    <h4>Boundless Horizons: Explore the World with Yuva Tourism!</h4> 
+  </div>  
+  
+  <img src="img/mountain_6.png" data-speedx="0.065"  data-speedy="0.05" data-speedz="0.05" data-distance="2300"  class="parallax mountain-6">
+  
+  <img src="img/fog_4.png" data-speedx="0.135" data-speedz="0" class="parallax fog-4" data-distance="2400">
+  
+  <img src="img/mountain_5.png"  data-speedx="0.08" data-speedz="0.13" data-speedy="0.0305" data-distance="2550" class="parallax mountain-5">
+  
+  <img src="img/fog_2.png"  data-speedx="0.11"  data-speedy="0.018" data-speedz="0" data-distance="2800" class="parallax fog-3">
+  
+  <img src="img/mountain_4.png" data-speedx="0.059"  data-speedy="0.024" data-speedz="0.35" data-distance="3200" class="parallax mountain-4">
+  
+  <img src="img/mountain_3.png" data-speedx="0.04"  data-speedy="0.018" data-speedz="0.32" data-distance="3400" class="parallax mountain-3">
+  
+  <img src="img/fog_2.png" data-speedx="0.15"  data-speedy="0.0115" data-speedz="0" data-distance="3600" class="parallax fog-2">
+  
+  <img src="img/mountain_2.png" data-speedx="0.0235"  data-speedy="0.013" data-speedz="0.42" data-distance="3800" class="parallax mountain-2">
+  
+  <img src="img/mountain_1.png" data-speedx="0.027"  data-speedy="0.018" data-speedz="0.53" data-distance="4000" class="parallax mountain-1"> 
+  
+  <img src="img/sun_rays.png"  class="sun-rays hide"> 
+  
+  <img src="img/black_shadow.png" class="black-shadow"> 
+  
+  <img src="img/fog_1.png" class="parallax fog-1" data-speedx="0.12"  data-speedy="0.01" data-distance="4200">
+</main>
+</section>  
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+
+
+  <!-- //cards -->
+<section id="explore">  
+<h1 class="title" style="color: white;">Planning Your Own Travel ?</h1>  
+<h2 class="title" style="color: gold;">We Are Right Here To Help You</h2>  
+ 
+<div id="app" class="container">
+  <card onclick="redirectToBeach()" data-image="beach-card.jpg"> 
+    <h1 slot="header">Beaches</h1>
+    <p slot="content">Sun-kissed sands, crystal waters, and endless coastal bliss beckon travelers.</p>
+  </card>
+                        
+  <card onclick="redirectToMountain()" data-image="images/mountain.jpg">    
+    <h1 slot="header">Mountains</h1> 
+    <p slot="content">"Discover towering peaks, serene landscapes, adventure, and tranquility in majestic mountain ranges worldwide."</p> 
+  </card>
+  <card onclick="redirectToCity()" data-image="images/city.jpg">
+    <h1 slot="header">Cities</h1>
+    <p slot="content">Vibrant cultures, diverse experiences, and urban adventures await in bustling metropolises.</p>
+  </card> 
+</div>
+
+<br><br><br> <br><br><br>  
+</section>   
+<hr>  <br><br><br> <br><br><br>  
+
+
+
+
+<section id="yuva"> 
+  <br><br><br> <br><br><br>
+  <audio id="yuvavoice">
+    <source src="yuvavoice.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio> 
+  <div class="video-container">
+    <video autoplay muted loop id="video-background">
+      <source src="bgvideo.mkv" type="video/mp4"> 
+      Your browser does not support the video tag.    
+    </video>
+  </div> 
+ 
+ 
+
+  <!--yuva club-->
+  <div class="accordion1">
+    <div class="accordion1-text"> 
+      <div class="title">What is Yuva Tourism Club(YTC)?</div><br><br><br>    
+      <div style="letter-spacing: 1px;">   
+      <p>Yuva Tourism Club (YTC) is an initiative of the Ministry of Tourism, Government of India, designed to create interest, awareness, and a sense of responsibility towards the country's natural and cultural heritage/tourism among children and youth. The vision is to nurture and develop young ambassadors of Indian tourism who would become aware of tourism possibilities in India, appreciate the rich cultural heritage, and develop an interest and passion for tourism.</p>
+      
+      <p>YTC is open to all students aged 10-25 years. The clubs are registered with the Ministry of Tourism and are affiliated with the State Tourism Departments. Each club is managed by a Coordinator, typically a teacher or staff member of the school/college.</p>
+      
+      <p>The YTC clubs organize various activities to promote tourism awareness and appreciation among the youth. These activities include:</p>
+      <br>
+      <ul style="font-weight: 900;"> 
+        <li>Field trips to tourist destinations</li><br>
+        <li>Heritage walks</li><br>
+        <li>Cultural performances</li><br>
+        <li>Photo exhibitions</li><br>
+        <li>Film screenings</li><br>
+        <li>Quiz contests and debates</li><br>
+        <li>Essay writing and painting competitions</li><br>
+        <li>Awareness campaigns on responsible tourism</li><br>
+      </ul>
+      
+      <p>The YTC clubs also play a crucial role in promoting sustainable tourism practices. Members are encouraged to adopt eco-friendly travel habits and to be respectful of the local environment and culture.</p>
+      
+      <p>Joining a Yuva Tourism Club offers numerous benefits:</p>
+      <br> 
+      <ul style="font-weight: 900;"> 
+        <li>Learn about the tourism industry and its potential as a career option</li><br>
+        <li>Develop skills and talents in areas such as tourism marketing, event management, and customer service</li><br>
+        <li>Gain exposure to different cultures and traditions</li><br>
+        <li>Make new friends and network with other young people interested in tourism</li><br>
+        <li>Contribute to the promotion of tourism in India</li><br>
+      </ul>
+      
+      <p>If you are a student between the ages of 10 and 25, we encourage you to join a Yuva Tourism Club. It is an excellent way to learn, grow, and make a difference.</p>
+      </div> 
+    </div>
+  </div>
+  <br><br><br> <br><br><br>  
+</section>
+ 
+<br><br><br> <br><br><br>  
+
+<hr> 
+<!--Gallery--> 
+<section id="gallery1">
+<div id="gallery" class="container-fluid">  
+
+  
+
+  <img src="image1.jpg" class="img-responsive">
+   <img src="image2.jpg" class="img-responsive"> 
+
+   <video class="vid1" autoplay muted loop>   
+    <source src="video3.mp4" type="video/mp4"> 
+    </source>   
+  </video> 
+
+  <img src="image3_g.jpg" class="img-responsive">
+  <img src="venice1.jpg" class="img-responsive"> 
+<img src="image_p.jpg" class="img-responsive">
+
+<video class="vid" autoplay muted loop>   
+  <source src="bgvideo.mkv" type="video/mp4"> 
+  </source> 
+</video>  
+
+  <img src="image4.jpg" class="card img-responsive">
+  <img src="image5.jpg" class="img-responsive"> 
+  
+  <video class="vid2" autoplay muted loop>   
+    <source src="video4.mp4" type="video/mp4"> 
+    </source>   
+  </video>       
+  <img src="image6.jpg" class="img-responsive">
+
+  <video class="vid3" autoplay muted loop>   
+    <source src="video2.mp4" type="video/mp4"> 
+    </source>   
+  </video> 
+
+
+ 
+  <img src="image8.jpg" class="img-responsive">  
+<img src="image9.jpg" class="img-responsive"> 
+<img src="image10.jpg" class="img-responsive"> 
+<img src="image11.jpg" class="img-responsive">
+<img src="spain_bg.jpg" class="img-responsive"> 
+<img src="sanfrancisco.jpg" class="img-responsive"> 
+
+<img src="image13.jpg" class="img-responsive"> 
+<img src="image14.jpg" class="img-responsive">  
+<img src="image15.jpg" class="img-responsive"> 
+
+<img src="img16.jpg" class="img-responsive">      
+
+<img src="image17.jpg" class="img-responsive">   
+
+<img src="image18.jpg" class="img-responsive">   
+
+
+
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+ 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div>
+
+  </div>
+</div>
+</section> 
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+
+
+<hr><br><br><br> <br><br><br>   
+
+<!--//faq-->
+<section id="faq">
+  <div class="accordion">
+    <div class="image-box">
+      <img src="images/mainImg.png" alt="Accordion Image">
+    </div>
+    <div class="accordion-text">
+      <div class="title">FAQ's</div> 
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">1- What is Yuva Tourism Club (YTC) and what is its purpose?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div> 
+        <p>Yuva Tourism Club (YTC) is an initiative of the Ministry of Tourism, Government of India, designed to create interest, awareness, and a sense of responsibility towards the country's natural and cultural heritage/tourism among children and youth. The vision is to nurture and develop young ambassadors of Indian tourism who would become aware of tourism possibilities in India, appreciate the rich cultural heritage, and develop an interest and passion for tourism.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">2- Who can join Yuva Tourism Club?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>YTC is open to all students aged 10-25 years. The clubs are registered with the Ministry of Tourism and are affiliated with the State Tourism Departments. Each club is managed by a Coordinator, typically a teacher or staff member of the school/college.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">3- What activities are organized by Yuva Tourism Clubs to promote tourism awareness among youth?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>YTC clubs organize various activities, including field trips to tourist destinations, heritage walks, cultural performances, photo exhibitions, film screenings, quiz contests, debates, essay writing, painting competitions, and awareness campaigns on responsible tourism. These activities aim to promote tourism awareness and appreciation among the youth.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">4- How do Yuva Tourism Clubs contribute to sustainable tourism practices?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>YTC clubs play a crucial role in promoting sustainable tourism practices. Members are encouraged to adopt eco-friendly travel habits and to be respectful of the local environment and culture. The clubs raise awareness about responsible tourism and emphasize the importance of preserving the natural and cultural heritage of tourist destinations.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">5- What are the benefits of joining a Yuva Tourism Club?</span>  
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Joining a Yuva Tourism Club offers numerous benefits, including learning about the tourism industry and its potential as a career option, developing skills in areas such as tourism marketing, event management, and customer service, gaining exposure to different cultures and traditions, making new friends, networking with other young people interested in tourism, and contributing to the promotion of tourism in India. It provides an excellent opportunity for students to learn, grow, and make a positive impact.</p>
+        <span class="line"></span>
+      </li> 
+    </ul>
+    </div>
+  </div> 
+</section>
+<br><br><br> <br><br><br>  
+
+<hr><br><br><br> <br><br><br>   
+
+
+<!--footer-->
+<section id="about">
+  <footer>
+  <div class="content">
+    <div class="left box">
+      <div class="upper">
+        <div class="topic">About us</div>
+        <p>Welcome to Youva Tourism, where young adventurers embark on transformative journeys. Discover vibrant cultures, eco-friendly practices, and meaningful experiences. Our curated guides and personalized recommendations empower you to explore responsibly, fostering a sense of global citizenship. Join us for life-changing adventures and embrace the beauty of diversity.</p>
+      </div>
+      <div class="lower">
+        <div class="topic">Contact us</div>
+        <div class="email">
+          <a href="https://mail.google.com/"><i class="fas fa-envelope"></i>coolgamerz905@gmail.com</a> 
+        </div>
+      </div> 
+    </div>
+
+    <div class="right box">
+      <div class="topic">Message us</div> 
+      <form id="messageForm">  
+        <input type="text" placeholder="Enter your message ">  
+        <input type="submit" name="" value="Send">
+        <div class="media-icons">
+          <a href="https://www.instagram.com/coolgamerzx/"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@coolgamerzx7414?si=IBF_FLGihaRGQ0td"><i class="fab fa-youtube"></i></a>
+          <a href="credits.html"><i class="fa-solid fa-film" style="color: #ffffff;"></i></a>  
+        </div>
+      </form> 
+    </div>
+  </div>
+  <div class="bottom"> 
+    <p><a href="credits.html">Credits</a>                                                 </p> 
+  </div>
+  <br><br><br> <br><br><br>  
+
+<hr>  <br><br><br> 
+</footer>
+ </section> 
+
+
+
+
+
+
+
+
+
+<!-- partial -->
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'><link rel="stylesheet" href="./choose.css"> 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./choose.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script> 
+  <script src="js/gsap.min.js"></script>
+  <script src="js/app.js"></script> 
+</style>  
+
+
+<script>
+//email// 
+document.getElementById("messageForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    var message = document.querySelector("#messageForm input[type='text']").value;   
+    var recipientEmail = "coolgamerz905@gmail.com";
+    var subject = "New Message from Yuva Tourism";
+    var emailBody = encodeURIComponent(message); // Encode the message for URL
+    
+    // Open Gmail compose page in a new tab with pre-filled recipient, subject, and pre-composed email body
+    window.open("https://mail.google.com/mail/u/0/?fs=1&tf=1&view=cm&to=" + recipientEmail + "&su=" + subject + "&body=" + emailBody, "_blank");
+});
+
+  
+
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('show');
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId); 
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  function redirectToBeach() {
+    window.location.href = 'beaches1.html';
+  }
+
+  function redirectToMountain() {
+    window.location.href = 'mountain.html';
+  }
+
+  function redirectToCity() {
+    window.location.href = 'city.html';
+  }
+
+  let isHamburgerClicked = false;
+
+  function handleExpandedHeader() {
+    const navbar = document.getElementById('navbar');
+    const hamburgerIcon = document.querySelector('.hamburger i');
+
+    if (window.innerWidth >= 768) {
+      navbar.classList.remove('show');
+    } else {
+      if (isHamburgerClicked) {
+        navbar.classList.add('show');
+      } else {
+        navbar.classList.remove('show');
+      }
+    }
+  }
+
+  document.querySelector('.hamburger i').addEventListener('click', function() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('show');
+    this.classList.toggle('active');
+    isHamburgerClicked = !isHamburgerClicked;
+    handleExpandedHeader();
+  });
+
+  window.addEventListener('resize', handleExpandedHeader);
+  //------------------------------------------------------------------------//
+
+  //search bar explore//
+
+  const searchInput = document.getElementById('search-input');
+const searchIcon = document.getElementById('search-icon');
+
+searchIcon.addEventListener('click', function() {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  const validExploreTerms = ['mountains', 'cities', 'beaches', 'adventure travel', 'backpacking', 'boutique hotels', 'camping', 'family vacation', 'festival tourism', 'group tours', 'historical sites', 'holiday packages', 'outdoor activities', 'resorts', 'road trips', 'beach', 'mountain', 'city', 'country', 'travel', 'explore', 'destination', 'tour'];
+  
+  const validFAQTerms = ['question1', 'question2', 'question3', 'faq', 'help', 'assistance', 'enquiry', 'query', 'problem', 'solution', 'ques', 'question', 'answer', 'questions', 'answers', 'faq', 'frequently asked questions', 'frequently asked question', 'FAQ', 'Frequently Asked Questions', 'Ques'];
+
+  const validYuvaClubsTerms = ['club1', 'club2', 'youth', 'activities', 'community', 'events', 'members', 'about yuva', 'youva', 'Youva Clubs', 'About Youva Clubs', 'Yuva Clubs', 'yuva', 'yuva club', 'about yuva club', 'club', 'Yuva', 'About Youva Clubs Details'];
+
+  const validAboutUsTerms = ['mission', 'history', 'team', 'vision', 'values', 'company', 'organization', 'about', 'contact', 'contact us', 'information', 'team', 'more about us', 'more', 'Contact Us', 'About us', 'Contact Information', 'details', 'email', 'e-mail address','credits','made by','Credential'];
+
+  const validGalleryTerms = ['nature', 'wildlife', 'landscape', 'architecture', 'art', 'portrait', 'travel', 'animals', 'plants','culture', 'events', 'vintage', 'black and white', 'modern', 'abstract', 'technology', 'history', 'scenery', 'people','music', 'movies','quotes', 'inspiration',  'holiday', 'vacation', 'memories', 'retro', 'classic','minimalistic', 'conceptual', 'experimental', 'creative', 'fun', 'emotional', 'dramatic', 'uplifting','places','tour','images','gallery','photos','scenery'];
+
+  if (validExploreTerms.includes(searchTerm)) {
+    const exploreSection = document.getElementById('explore');
+    exploreSection.scrollIntoView({ behavior: 'smooth' });
+  } else if (validFAQTerms.includes(searchTerm)) {
+    const faqSection = document.getElementById('faq');
+    faqSection.scrollIntoView({ behavior: 'smooth' });
+  } else if (validYuvaClubsTerms.includes(searchTerm)) {
+    const yuvaClubsSection = document.getElementById('yuva');
+    yuvaClubsSection.scrollIntoView({ behavior: 'smooth' });
+  } else if (validAboutUsTerms.includes(searchTerm)) {
+    const aboutUsSection = document.getElementById('about');
+    aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+  } else if (validGalleryTerms.includes(searchTerm)) {
+    const gallerySection = document.getElementById('gallery1');  
+    gallerySection.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    searchInput.value = 'Invalid search term!';
+    searchInput.style.color = 'red';
+    searchInput.classList.add('shake');
+    setTimeout(() => {
+      searchInput.classList.remove('shake');            
+      searchInput.value = '';
+      searchInput.style.color = 'black';
+    }, 2000);
+  }
+});
+
+
+//------------------------------------------------------------------------//
+
+
+/*search suggestions*/ 
+const searchSuggestions = document.getElementById('search-suggestions');
+
+const validTerms = ['mountains', 'cities', 'beaches', "adventure travel", "backpacking", "boutique hotels", "camping","family vacation", "festival tourism",
+        "group tours", "historical sites", "holiday packages", "outdoor activities", "resorts", "road trips",'beach','mountain','city','country','travel','explore','destination','question1', 'question2', 'question3', 'faq', 'help', 'assistance', 'enquiry', 'query', 'problem', 'solution','ques','question','answer','questions','answers','faq','frequently asked questions','FAQ','Frequently Asked Questions','Ques','club1', 'club2', 'youth', 'activities', 'community', 'events', 'members','about yuva','Youva Clubs','About Youva Clubs','Yuva Clubs','yuva','yuva club','about yuva club','club','Yuva','About Youva Clubs Details',
+        'mission', 'history', 'team', 'vision', 'values', 'company', 'organization','about','contact','contact us','information','team','more about us','more','Contact Us','About us ','Contact Information','details','email','e-mail address'
+        ,'nature', 'wildlife', 'landscape', 'architecture', 'art', 'portrait', 'travel', 'animals', 'plants','culture', 'events', 'vintage', 'black and white', 'modern', 'abstract', 'technology', 'history', 'scenery', 'people','music', 'movies','quotes', 'inspiration',  'holiday', 'vacation', 'memories', 'retro', 'classic','minimalistic', 'conceptual', 'experimental', 'creative', 'fun', 'emotional', 'dramatic', 'uplifting','places','tour','images','gallery','photos','scenery','credential','credits' ]; 
+
+searchInput.addEventListener('input', function() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const matchingTerms = validTerms.filter(term => term.includes(searchTerm)); 
+
+    
+    searchSuggestions.innerHTML = '';
+
+  
+    matchingTerms.forEach(term => {
+        const suggestionItem = document.createElement('div');
+        suggestionItem.classList.add('suggestion-item');
+        suggestionItem.textContent = term;
+
+        
+        suggestionItem.addEventListener('click', function() {
+            searchInput.value = term;
+            searchSuggestions.innerHTML = '';
+        });
+
+        searchSuggestions.appendChild(suggestionItem);
+    });
+
+   
+    if (matchingTerms.length > 0) {
+        searchSuggestions.style.display = 'block';
+    } else {
+        searchSuggestions.style.display = 'none';
+    }
+});
+
+
+document.addEventListener('click', function(event) {
+    if (!searchInput.contains(event.target) && !searchSuggestions.contains(event.target)) {
+        searchSuggestions.style.display = 'none';
+    }
+});
+
+//------------------------------------------------------------------------//
+ 
+
+
+//Top5 search terms//
+searchInput.addEventListener('input', function() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const matchingTerms = validTerms.filter(term => term.includes(searchTerm));
+
+    
+    searchSuggestions.innerHTML = '';
+
+ 
+    const topSuggestions = matchingTerms.slice(0, 5);
+    topSuggestions.forEach(term => {
+        const suggestionItem = document.createElement('div');
+        suggestionItem.classList.add('suggestion-item');
+        suggestionItem.textContent = term;
+
+       
+        suggestionItem.addEventListener('click', function() {
+            searchInput.value = term;
+            searchSuggestions.innerHTML = ''; 
+        });
+
+        searchSuggestions.appendChild(suggestionItem);
+    });
+
+
+    if (matchingTerms.length > 0) {
+        searchSuggestions.style.display = 'block';
+    } else {
+        searchSuggestions.style.display = 'none';
+    }
+});
+  //------------------------------------------------------------------------//
+
+
+//text clear on search icon//  
+
+searchIcon.addEventListener('click', function() {
+  searchInput.value = '';
+  const searchTerm = searchInput.value.toLowerCase();
+});
+
+//------------------------------------------------------------------------//
+
+//top button// 
+
+
+let topIcon = document.getElementById('top-icon');
+
+topIcon.addEventListener('click', function() {
+  const homeSection = document.getElementById('home');
+  homeSection.scrollIntoView({ behavior: 'smooth' });
+});
+ 
+
+
+topIcon.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+
+topIcon.addEventListener('mouseenter', function() {
+  topIcon.classList.add('fa-bounce'); // Add the "fa-bounce" class on hover
+});
+
+topIcon.addEventListener('mouseleave', function() {
+  topIcon.classList.remove('fa-bounce'); // Remove the "fa-bounce" class when not hovering
+});
+  
+
+//------------------------------------------------------------------------//
+/*Gallery*/
+$(document).ready(function(){ 
+  $("img").click(function(){
+  var t = $(this).attr("src");
+  $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+  $("#myModal").modal();
+});
+
+$("video").click(function(){
+  var v = $("video > source");
+  var t = v.attr("src");
+  $(".modal-body").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
+  $("#myModal").modal();  
+});
+});//EOF Document.ready
+
+
+//------------------------------------------------------------------------// 
+
+
+/*faq*/
+let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }  
+
+
+    //loader//
+document.addEventListener("DOMContentLoaded", function() {
+
+setTimeout(function() {
+  var loaderWrapper = document.querySelector(".loading");  
+  loaderWrapper.style.display = "none";
+}, 4000); 
+});  
+
+/*pop up */
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.getElementById("popupContainer").style.display = "flex";
+    }, 120000); 
+});   
+
+function handleYes() {
+    alert("Thank you for your feedback!");
+    closePopup();
+}
+
+function handleNo() {
+    alert("We're sorry to hear that. Thank you!");
+    closePopup();
+}    
+
+function closePopup() {
+    document.getElementById("popupContainer").style.display = "none";
+}
+ 
+
+// Show the popup
+function showPopup() {
+    document.querySelector('.popup-container').style.display = 'flex';
+    document.body.classList.add('popup-active'); // Add the class to body to stop scrolling
+}
+
+// Hide the popup
+function hidePopup() {
+    document.querySelector('.popup-container').style.display = 'none';
+    document.body.classList.remove('popup-active'); // Remove the class to enable scrolling
+}
+
+
+// Get the audio elements
+const bgMusic = document.getElementById("bgmusic");
+const yuvaVoice = document.getElementById("yuvavoice");
+const accordion1 = document.querySelector(".accordion1");
+
+// Set initial volume for bgmusic
+bgMusic.volume = 1;
+
+// Variable to store the playback position of yuvavoice
+let yuvaVoicePlaybackPosition = 0;
+
+// Function to handle hover events
+function handleAccordionHover() {
+  // When hovering, set bgmusic volume to 0.1 and play yuvavoice
+  bgMusic.volume = 0.1;
+
+  // Check if yuvavoice was paused before
+  if (yuvaVoicePlaybackPosition > 0) {
+    yuvaVoice.currentTime = yuvaVoicePlaybackPosition;
+    yuvaVoice.play();
+  } else {
+    yuvaVoice.play();
+  }
+}
+
+function handleAccordionLeave() {
+  // When not hovering, set bgmusic volume back to 1 and pause yuvavoice
+  bgMusic.volume = 1;
+  yuvaVoice.pause();
+  // Store the current playback position of yuvavoice
+  yuvaVoicePlaybackPosition = yuvaVoice.currentTime;
+}
+
+// Add event listeners to the accordion
+accordion1.addEventListener("mouseenter", handleAccordionHover);
+accordion1.addEventListener("mouseleave", handleAccordionLeave);
+   
+
+
+
+</script> 
+<style> 
+  #yuva {
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#video-background {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+}
+
+/*top button*/
+#top-icon {
+  z-index: 1;                    
+  position: fixed;
+  bottom: 20px;
+  right: 20px;  
+  cursor: pointer; 
+ }
+/*top button bounce effect*/
+#top-icon:hover {    
+  animation: bounce 0.8s infinite;     
+}
+   
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+  
+
+/*Gallery*/
+
+#gallery{
+  -webkit-column-count:4;
+  -moz-column-count:4;
+  column-count:4;
+  
+  -webkit-column-gap:20px;
+  -moz-column-gap:20px;
+  column-gap:20px;
+}
+@media (max-width:1200px){
+  #gallery{
+  -webkit-column-count:3;
+  -moz-column-count:3;
+  column-count:3;
+    
+  -webkit-column-gap:20px;
+  -moz-column-gap:20px;
+  column-gap:20px;
+}
+}
+@media (max-width:800px){
+  #gallery{
+  -webkit-column-count:2;
+  -moz-column-count:2;  
+  column-count:2;
+    
+  -webkit-column-gap:20px;
+  -moz-column-gap:20px;
+  column-gap:20px;
+}
+}
+@media (max-width:600px){
+  #gallery{
+  -webkit-column-count:1;
+  -moz-column-count:1;
+  column-count:1;
+}  
+}
+#gallery img{     
+  width:100%;
+  height:auto;
+  margin: 4% auto;
+  box-shadow:-3px 5px 15px #000;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#gallery video{
+  width:100%;
+  height:auto;
+  margin: 4% auto;
+  pointer-events: none;    
+  box-shadow:-3px 5px 15px #000;   
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.modal-img{
+  width:100%;           
+  height:auto;    
+}
+.modal-body{
+  padding:0px;
+}
+
+
+ /*loader*/
+ @import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+} 
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%; 
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.loading-text span { 
+  font-size: 2.5em;  
+  display: inline-block;
+  margin: 0 5px;
+  color: #f0d01b;
+  font-family: 'Quattrocento Sans', sans-serif;
+  filter: blur(0px);
+  animation: blur-text 1.5s infinite linear alternate;
+}
+
+@keyframes blur-text {
+  0% {
+      filter: blur(0px);
+  }
+  100% {
+      filter: blur(4px);
+  }
+}
+  
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+
+.btn-yes, .btn-no {
+    margin: 10px;              
+    border-radius: 10px;       
+    padding: 15px 30px;
+    cursor: pointer;
+    background: #ffffff;
+    border-color: #f0d01b; 
+    border-width: 1.5px;  
+    color: #000000;
+    font-size: 1em; 
+    transition: 0.5s; 
+}
+
+.btn-yes:hover, .btn-no:hover {
+    background: #050505;
+    color: #fff; 
+    font-size: 1.5em;  
+    border-radius: 30px; 
+} 
+ 
+.btn-yes:focus, .btn-no:focus {
+    outline: none;
+}
+
+
+
+
+body.popup-active {
+    overflow: hidden; 
+}
+
+
+   
+
+</style>
+
+
+</body> 
+</html>
+
+
